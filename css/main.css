@@ -1,0 +1,92 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 1.6em;
+}
+.header {
+	background: #5A7CA0; /* Для старых браузров */
+    background: linear-gradient(to top, #5A7CA0, #4A6C8F);
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+    min-height: 100px;
+}
+.head-left-logo {
+	margin: 0 35% 0 35%;
+}
+.head-center {
+	text-align: center;
+	color: #ffffff;
+}
+.head-right-logo {
+	margin: 5% 27% 0 27%;
+}
+.right-part {
+	border-left: 2px solid #d3d3d3;
+}
+.left-col {
+	margin: 40px auto;
+	border: 1px solid black;
+}
+.right-col {
+	margin: 40px auto;
+	border: 1px solid black;
+	min-height: 600px;
+}
+.left-menu {
+	list-style: none;
+	text-align: center;
+	padding: 10px 15px;
+
+	border: 1px solid blue;
+	
+}
+.left-menu li {
+	text-decoration: none;
+	margin: 0 0 8px 0;
+	/*border-bottom: 1px solid red;*/
+}
+a.menu-btn {
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	padding: 12px 10%;
+	background: #6383A8;
+	border-radius: 4px;
+}
+a.menu-btn:hover {
+	background: #1E9DE2;
+}
+span.icon {
+	float: left;
+	margin-left: 10%;
+}
+a.vk-btn {
+	display: block;
+	margin: 0 13%;
+	color: #337ab7;
+	text-decoration: none;
+}
