@@ -76,6 +76,10 @@ a.menu-btn {
 	padding: 12px 10%;
 	background: #6383A8;
 	border-radius: 4px;
+	-webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+	transition: 0.4s;
 }
 a.menu-btn:hover {
 	background: #1E9DE2;
@@ -89,4 +93,13 @@ a.vk-btn {
 	margin: 0 13%;
 	color: #337ab7;
 	text-decoration: none;
+}
+.posts {
+	list-style: none;
+	padding: 0 40px;
+}
+.posts li {
+	border-bottom: 1px solid #EEEEEE;
+	padding-bottom: 20px;
+	margin-bottom: 60px;
 }
