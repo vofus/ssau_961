@@ -5,13 +5,16 @@ $(document).ready(function() {
 		cache: false
 	};
 	
+	// var ua = navigator.userAgent,
+	// event = (ua.match(/iPad/i)) ? "touchstart" : "click";
+
 	$("#news").click(function() {
-		$.getJSON('http://127.0.0.1:8080/ssau961.com/BD/line_news.json', params, function(data) {
-		//console.log(data);
+		$.getJSON('BD/line_news.json', params, function(data) {
+		console.log(data);
 
 		var output = "<ul class='posts'>";
 		$.each(data, function(key, val) {
-			//console.log("Проход: " + (key+1));	
+			console.log("Проход: " + (key+1));	
 			 output += "<li>";
 			 output += "<h2>" + val.title + "</h2>";
 			 output += "<img src='" + val.imageUrl + "' alt='" + val.title + "' width='80%'>";
@@ -22,7 +25,7 @@ $(document).ready(function() {
 				 output += "<i class='fa fa-file-archive-o'></i>&nbsp;&nbsp;" + val.subject;
 				 output += "</a>";
 			 } else {
-			 	return false;
+			 	console.log("Нет прикрепленных файлов!");
 			 }
 			 output += "</li>";
 		});
